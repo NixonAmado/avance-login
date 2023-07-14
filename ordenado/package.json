@@ -1,0 +1,17 @@
+{
+  "name": "jsonserverejemplo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

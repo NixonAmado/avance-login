@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+    rel="stylesheet"
+    />
+</head>
+<body><section class="w-100 p-4 d-flex justify-content-center pb-4">
+    <div style="width: 26rem;">
+      <!-- Pills navs -->
+      <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="false" tabindex="-1">Login</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="true">Register</a>
+        </li>
+      </ul>
+      <!-- Pills navs -->
+
+      <!-- Pills content -->
+      <div class="tab-content">
+        <div class="tab-pane fade" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+          <form method="POST">
+            <div class="text-center mb-3">
+              <p>Sign in with:</p>
+              <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+
+              <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-google"></i>
+              </button>
+
+              <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+              </button>
+
+              <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-github"></i>
+              </button>
+            </div>
+
+            <p class="text-center">or:</p>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="loginName" class="form-control">
+              <label class="form-label" for="loginName" style="margin-left: 0px;">Email or username</label>
+            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 114.4px;"></div><div class="form-notch-trailing"></div></div></div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input type="password" id="loginPassword" class="form-control">
+              <label class="form-label" for="loginPassword" style="margin-left: 0px;">Password</label>
+            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64.8px;"></div><div class="form-notch-trailing"></div></div></div>
+
+            <!-- 2 column grid layout -->
+            <div class="row mb-4">
+              <div class="col-md-6 d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check mb-3 mb-md-0">
+                  <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked="">
+                  <label class="form-check-label" for="loginCheck"> Remember me </label>
+                </div>
+              </div>
+
+              <div class="col-md-6 d-flex justify-content-center">
+                <!-- Simple link -->
+                <a href="#!">Forgot password?</a>
+              </div>
+            </div>
+
+
+
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+            <!-- Register buttons -->
+            <div class="text-center">
+              <p>Not a member? <a href="#!">Register</a></p>
+            </div>
+          </form>
+        </div>
+        <div class="tab-pane fade active show" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+          <form id="form-register" method="POST"  > 
+          <div class="text-center mb-3">
+              <p>Sign up with:</p>
+              <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+
+              <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-google"></i>
+              </button>
+
+              <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+              </button>
+
+              <button type="button" class="btn btn-secondary btn-floating mx-1">
+                <i class="fab fa-github"></i>
+              </button>
+            </div>
+
+            <p class="text-center">or:</p>
+              <!-- Name input -->
+              <div class="form-outline mb-4">
+                <input type="text" id="registerName" class="form-control">
+                <label class="form-label" for="registerName" style="margin-left: 0px;">Name</label>
+              <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 42.4px;"></div><div class="form-notch-trailing"></div></div></div>
+
+              <!-- Username input -->
+              <div class="form-outline mb-4">
+                <input type="text" id="registerUsername" class="form-control">
+                <label class="form-label" for="registerUsername" style="margin-left: 0px;">Username</label>
+              <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 66.4px;"></div><div class="form-notch-trailing"></div></div></div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="registerEmail" class="form-control">
+                <label class="form-label" for="registerEmail" style="margin-left: 0px;">Email</label>
+              <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 40px;"></div><div class="form-notch-trailing"></div></div></div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input type="password" id="registerPassword" class="form-control">
+                <label class="form-label" for="registerPassword" style="margin-left: 0px;">Password</label>
+              <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64.8px;"></div><div class="form-notch-trailing"></div></div></div>
+
+              <!-- genero seleccion radio -->
+              <div class=" d-flex justify-content-center mb-4">
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input ipt-radio-register" type="radio" value="1" name="inlineRadioOptions" id="inlineRadio1" />
+                  <label class="form-check-label" for="inlineRadio1">masculino</label>
+                </div>
+
+                <div class="form-check form-check-inline ">
+                  <input class="form-check-input ipt-radio-register" type="radio" value="2" name="inlineRadioOptions" id="inlineRadio2" />
+                  <label class="form-check-label" for="inlineRadio2">femenino</label>
+                </div>
+
+              </div>
+
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked="" aria-describedby="registerCheckHelpText">
+                <label class="form-check-label" for="registerCheck">
+                  I have read and agree to the terms
+                </label>
+              </div>
+
+              <!-- Submit button -->
+              <button type="button" id="form-register-btn" class="btn btn-primary btn-block mb-3">Sign up</button>
+          </form>
+        </div>
+      </div>
+      <!-- Pills content -->
+    </div>
+  </section>
+
+
+
+  <button class="btn btn-primary" type="button" id="btn-offCanvas" data-mdb-toggle="offcanvas" data-mdb-target="#offcanvasTop"
+  aria-controls="offcanvasTop">Registrados</button>
+
+<div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+    <button type="button" class="btn-close text-reset" data-mdb-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <table class="table align-middle table-hover">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">User</th>
+            <th scope="col">Email</th>
+            <th scope="col">password</th>
+            <th scope="col">sexo</th>
+            <th scope="col">funciones</th>
+
+
+          </tr>
+        </thead>
+        <tbody id="t-body">
+
+        </tbody>
+      </table>
+
+</div>
+
+    <!-- MDB -->
+<script 
+    type="text/javascript" 
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js">
+</script>
+<script src="index.js" type="module"></script>
+</body>
+</html>
+
+
+<!-- <section class="intro">
+  <div class="bg-image h-100" style="background-image: url(https://mdbootstrap.com/img/Photos/new-templates/glassmorphism-article/img7.jpg);">
+    <div class="mask d-flex align-items-center h-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="card mask-custom">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-borderless text-white mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col">EMPLOYEES</th>
+                        <th scope="col">POSITION</th>
+                        <th scope="col">CONTACTS</th>
+                        <th scope="col">AGE</th>
+                        <th scope="col">ADDRESS</th>
+                        <th scope="col">SALARY</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Tiger Nixon</th>
+                        <td>System Architect</td>
+                        <td>tnixon12@example.com</td>
+                        <td>61</td>
+                        <td>Edinburgh</td>
+                        <td>$320,800</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Sonya Frost</th>
+                        <td>Software Engineer</td>
+                        <td>sfrost34@example.com</td>
+                        <td>23</td>
+                        <td>Edinburgh</td>
+                        <td>$103,600</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Jena Gaines</th>
+                        <td>Office Manager</td>
+                        <td>jgaines75@example.com</td>
+                        <td>30</td>
+                        <td>London</td>
+                        <td>$90,560</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Quinn Flynn</th>
+                        <td>Support Lead</td>
+                        <td>qflyn09@example.com</td>
+                        <td>22</td>
+                        <td>Edinburgh</td>
+                        <td>$342,000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Charde Marshall</th>
+                        <td>Regional Director</td>
+                        <td>cmarshall28@example.com</td>
+                        <td>36</td>
+                        <td>San Francisco</td>
+                        <td>$470,600</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Haley Kennedy</th>
+                        <td>Senior Marketing Designer</td>
+                        <td>hkennedy63@example.com</td>
+                        <td>43</td>
+                        <td>London</td>
+                        <td>$313,500</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tatyana Fitzpatrick</th>
+                        <td>Regional Director</td>
+                        <td>tfitzpatrick00@example.com</td>
+                        <td>19</td>
+                        <td>Warsaw</td>
+                        <td>$385,750</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->

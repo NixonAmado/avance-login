@@ -1,0 +1,15 @@
+{
+  "usuario": [],
+  "tiposDeSexo": [
+    {
+      "id": "1",
+      "sexo": "masculino",
+      "informacion": "se asigna hegemónicamente a personas de sexo biológico masculino"
+    },
+    {
+      "id": "2",
+      "sexo": "femenino",
+      "informacion": "se asigna hegemónicamente a personas de sexo biológico femenino"
+    }
+  ]
+}
